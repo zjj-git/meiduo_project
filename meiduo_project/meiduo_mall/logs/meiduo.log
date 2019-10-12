@@ -1,0 +1,44 @@
+ERROR 2019-10-12 14:25:26,634 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-10-12 14:25:26,680 log 228 Bad Request: /
+WARNING 2019-10-12 14:25:26,681 basehttp 124 "GET / HTTP/1.1" 400 69936
+ERROR 2019-10-12 14:25:27,105 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-10-12 14:25:27,131 log 228 Bad Request: /favicon.ico
+WARNING 2019-10-12 14:25:27,131 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 69858
+INFO 2019-10-12 14:27:01,301 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-10-12 14:27:01,380 log 228 Not Found: /cart/
+WARNING 2019-10-12 14:27:01,381 basehttp 124 "GET /cart/ HTTP/1.1" 404 1964
+WARNING 2019-10-12 14:27:26,783 log 228 Not Found: /cart/
+WARNING 2019-10-12 14:27:26,784 basehttp 124 "GET /cart/ HTTP/1.1" 404 1964
+WARNING 2019-10-12 14:27:29,928 log 228 Not Found: /cart/
+WARNING 2019-10-12 14:27:29,929 basehttp 124 "GET /cart/ HTTP/1.1" 404 1964
+WARNING 2019-10-12 14:27:30,096 log 228 Not Found: /cart/
+WARNING 2019-10-12 14:27:30,097 basehttp 124 "GET /cart/ HTTP/1.1" 404 1964
+WARNING 2019-10-12 14:27:30,629 log 228 Not Found: /cart/
+WARNING 2019-10-12 14:27:30,630 basehttp 124 "GET /cart/ HTTP/1.1" 404 1964
+ERROR 2019-10-12 14:31:08,642 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-10-12 14:31:08,682 log 228 Bad Request: /
+WARNING 2019-10-12 14:31:08,683 basehttp 124 "GET / HTTP/1.1" 400 69936
+ERROR 2019-10-12 14:31:09,107 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-10-12 14:31:09,135 log 228 Bad Request: /favicon.ico
+WARNING 2019-10-12 14:31:09,135 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 69858
+ERROR 2019-10-12 14:33:11,503 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-10-12 14:33:11,542 log 228 Bad Request: /
+WARNING 2019-10-12 14:33:11,542 basehttp 124 "GET / HTTP/1.1" 400 70092
+ERROR 2019-10-12 14:33:11,633 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-10-12 14:33:11,661 log 228 Bad Request: /favicon.ico
+WARNING 2019-10-12 14:33:11,661 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 70014
+ERROR 2019-10-12 14:33:15,797 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-10-12 14:33:15,841 log 228 Bad Request: /
+WARNING 2019-10-12 14:33:15,841 basehttp 124 "GET / HTTP/1.1" 400 70227
+ERROR 2019-10-12 14:33:16,210 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-10-12 14:33:16,233 log 228 Bad Request: /favicon.ico
+WARNING 2019-10-12 14:33:16,234 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 70275
+INFO 2019-10-12 14:34:15,490 basehttp 124 "GET / HTTP/1.1" 200 16286
+INFO 2019-10-12 14:34:15,543 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2019-10-12 14:34:15,649 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+INFO 2019-10-12 14:34:15,650 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+INFO 2019-10-12 14:34:15,650 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+WARNING 2019-10-12 14:34:15,655 log 228 Not Found: /favicon.ico
+WARNING 2019-10-12 14:34:15,655 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1977
+INFO 2019-10-12 14:35:47,178 basehttp 124 "GET / HTTP/1.1" 200 16286
+INFO 2019-10-12 14:36:05,227 basehttp 124 "GET / HTTP/1.1" 200 16286

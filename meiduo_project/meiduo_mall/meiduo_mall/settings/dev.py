@@ -9,7 +9,7 @@ SECRET_KEY = '@xnwmxv7f5y(o(8)l=x%g7eh-sbyo796cz+tg*2r((ga5ea2l%'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['api.meiduo.com']
+ALLOWED_HOSTS = ['localhost', 'www.meiduo.com', '127.0.0.1', 'api.meiduo.com', ]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
