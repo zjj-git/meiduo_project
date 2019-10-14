@@ -42,3 +42,214 @@ WARNING 2019-10-12 14:34:15,655 log 228 Not Found: /favicon.ico
 WARNING 2019-10-12 14:34:15,655 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1977
 INFO 2019-10-12 14:35:47,178 basehttp 124 "GET / HTTP/1.1" 200 16286
 INFO 2019-10-12 14:36:05,227 basehttp 124 "GET / HTTP/1.1" 200 16286
+INFO 2019-10-12 15:15:24,854 basehttp 124 "GET / HTTP/1.1" 200 16286
+INFO 2019-10-12 15:15:24,871 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2019-10-12 15:15:24,921 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2019-10-12 15:15:24,922 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2019-10-12 15:15:24,924 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2019-10-12 15:33:14,282 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-12 15:33:28,894 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-12 15:51:00,884 basehttp 124 "GET / HTTP/1.1" 200 16286
+INFO 2019-10-12 15:51:00,897 basehttp 124 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2019-10-12 15:51:00,988 basehttp 124 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2019-10-12 15:51:00,991 basehttp 124 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2019-10-12 15:51:00,991 basehttp 124 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2019-10-12 15:51:01,004 basehttp 124 "GET /favicon.ico HTTP/1.1" 200 16286
+INFO 2019-10-12 16:00:24,191 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-12 16:00:24,257 basehttp 124 "GET /cart/ HTTP/1.1" 200 16286
+WARNING 2019-10-12 16:13:42,610 log 228 Not Found: /
+WARNING 2019-10-12 16:13:42,611 basehttp 124 "GET / HTTP/1.1" 404 2114
+WARNING 2019-10-12 16:13:42,647 log 228 Not Found: /favicon.ico
+WARNING 2019-10-12 16:13:42,647 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2165
+INFO 2019-10-12 16:13:56,602 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-10-12 16:13:56,649 log 228 Not Found: /cart/
+WARNING 2019-10-12 16:13:56,650 basehttp 124 "GET /cart/ HTTP/1.1" 404 2152
+WARNING 2019-10-12 16:13:57,421 log 228 Not Found: /cart/
+WARNING 2019-10-12 16:13:57,422 basehttp 124 "GET /cart/ HTTP/1.1" 404 2152
+ERROR 2019-10-12 16:13:58,323 log 228 Internal Server Error: /image_codes/b6ddb974-d136-440a-91de-ddc83941c650/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, image = captcha.generate_captcha()
+ValueError: too many values to unpack (expected 2)
+ERROR 2019-10-12 16:13:58,324 basehttp 124 "GET /image_codes/b6ddb974-d136-440a-91de-ddc83941c650/ HTTP/1.1" 500 18824
+ERROR 2019-10-12 16:13:59,200 log 228 Internal Server Error: /image_codes/46e2a918-f061-4765-8140-3d600916f840/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, image = captcha.generate_captcha()
+ValueError: too many values to unpack (expected 2)
+ERROR 2019-10-12 16:13:59,201 basehttp 124 "GET /image_codes/46e2a918-f061-4765-8140-3d600916f840/ HTTP/1.1" 500 18824
+ERROR 2019-10-12 16:14:00,322 log 228 Internal Server Error: /image_codes/88c9cafa-7943-4bac-b558-b0a4e15f5d3b/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, image = captcha.generate_captcha()
+ValueError: too many values to unpack (expected 2)
+ERROR 2019-10-12 16:14:00,323 basehttp 124 "GET /image_codes/88c9cafa-7943-4bac-b558-b0a4e15f5d3b/ HTTP/1.1" 500 18824
+ERROR 2019-10-12 16:14:19,090 log 228 Internal Server Error: /image_codes/5beb68b3-377d-4fe0-9782-97318b6e9ab1/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, image = captcha.generate_captcha()
+ValueError: too many values to unpack (expected 2)
+ERROR 2019-10-12 16:14:19,091 basehttp 124 "GET /image_codes/5beb68b3-377d-4fe0-9782-97318b6e9ab1/ HTTP/1.1" 500 18824
+ERROR 2019-10-12 16:15:08,771 log 228 Internal Server Error: /image_codes/9a76a712-ba9a-4a6a-9c31-47e994ff61b2/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, image = captcha.generate_captcha()
+ValueError: too many values to unpack (expected 2)
+ERROR 2019-10-12 16:15:08,772 basehttp 124 "GET /image_codes/9a76a712-ba9a-4a6a-9c31-47e994ff61b2/ HTTP/1.1" 500 18824
+INFO 2019-10-12 16:16:17,631 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-10-12 16:16:17,689 log 228 Not Found: /cart/
+WARNING 2019-10-12 16:16:17,690 basehttp 124 "GET /cart/ HTTP/1.1" 404 2152
+ERROR 2019-10-12 16:16:21,448 log 228 Internal Server Error: /image_codes/eca82098-70ae-475b-9f9f-bd35ab108dad/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, image = captcha.generate_captcha()
+ValueError: too many values to unpack (expected 2)
+ERROR 2019-10-12 16:16:21,449 basehttp 124 "GET /image_codes/eca82098-70ae-475b-9f9f-bd35ab108dad/ HTTP/1.1" 500 18824
+ERROR 2019-10-12 16:16:24,456 log 228 Internal Server Error: /image_codes/e6a7bf70-680e-4114-8691-a771f2de1aea/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, image = captcha.generate_captcha()
+ValueError: too many values to unpack (expected 2)
+ERROR 2019-10-12 16:16:24,457 basehttp 124 "GET /image_codes/e6a7bf70-680e-4114-8691-a771f2de1aea/ HTTP/1.1" 500 18824
+INFO 2019-10-12 16:17:29,838 basehttp 124 "GET /image_codes/(?P%3Cimage_code_id%3E.+)/$ HTTP/1.1" 301 0
+ERROR 2019-10-12 16:17:29,895 log 228 Internal Server Error: /image_codes/(/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 22, in get
+    text, image = captcha.generate_captcha()
+ValueError: too many values to unpack (expected 2)
+ERROR 2019-10-12 16:17:29,895 basehttp 124 "GET /image_codes/(/?P%3Cimage_code_id%3E.+)/$ HTTP/1.1" 500 95968
+WARNING 2019-10-12 16:18:57,199 log 228 Not Found: /
+WARNING 2019-10-12 16:18:57,199 basehttp 124 "GET / HTTP/1.1" 404 2114
+WARNING 2019-10-12 16:19:34,249 log 228 Not Found: /
+WARNING 2019-10-12 16:19:34,249 basehttp 124 "GET / HTTP/1.1" 404 2114
+WARNING 2019-10-12 16:20:07,198 log 228 Not Found: /
+WARNING 2019-10-12 16:20:07,198 basehttp 124 "GET / HTTP/1.1" 404 2008
+INFO 2019-10-12 16:20:13,603 basehttp 124 "GET /image_codes/fa9a306f-ec57-47a8-86b2-90fbc7a6577c/ HTTP/1.1" 200 3534
