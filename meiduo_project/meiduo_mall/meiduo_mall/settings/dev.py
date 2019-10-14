@@ -4,6 +4,7 @@ import sys
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 更改python解释器导包路径,从应用文件夹apps导包
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+sys.path.insert(0,BASE_DIR)
 
 SECRET_KEY = '@xnwmxv7f5y(o(8)l=x%g7eh-sbyo796cz+tg*2r((ga5ea2l%'
 
