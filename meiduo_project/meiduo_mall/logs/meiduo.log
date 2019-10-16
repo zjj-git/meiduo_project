@@ -1314,3 +1314,146 @@ WARNING 2019-10-15 15:38:40,239 basehttp 124 "GET /cart/ HTTP/1.1" 404 3664
 INFO 2019-10-15 15:38:57,419 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 204
 WARNING 2019-10-15 15:38:57,592 log 228 Not Found: /cart/
 WARNING 2019-10-15 15:38:57,593 basehttp 124 "GET /cart/ HTTP/1.1" 404 3664
+INFO 2019-10-16 10:10:30,043 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-10-16 10:10:30,203 log 228 Not Found: /cart/
+WARNING 2019-10-16 10:10:30,204 basehttp 124 "GET /cart/ HTTP/1.1" 404 3817
+INFO 2019-10-16 10:10:40,842 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-10-16 10:10:40,853 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+INFO 2019-10-16 10:10:40,889 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2019-10-16 10:10:40,898 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 10:10:40,899 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3853
+INFO 2019-10-16 10:10:54,823 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+WARNING 2019-10-16 10:10:54,836 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 10:10:54,837 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3853
+WARNING 2019-10-16 10:49:19,129 log 228 Not Found: /cart/
+WARNING 2019-10-16 10:49:19,129 basehttp 124 "GET /cart/ HTTP/1.1" 404 3817
+WARNING 2019-10-16 10:49:24,839 log 228 Not Found: /cart/
+WARNING 2019-10-16 10:49:24,840 basehttp 124 "GET /cart/ HTTP/1.1" 404 3817
+INFO 2019-10-16 10:49:26,301 basehttp 124 "GET /image_codes/e1c85fe2-8e42-4bf9-acc6-f92c833c0140/ HTTP/1.1" 200 3132
+INFO 2019-10-16 10:49:29,307 basehttp 124 "GET /usernames/15591483858/count/ HTTP/1.1" 200 36
+INFO 2019-10-16 10:49:32,750 basehttp 124 "GET /usernames/11111/count/ HTTP/1.1" 200 30
+INFO 2019-10-16 10:49:42,302 basehttp 124 "GET /mobiles/15591483858/count/ HTTP/1.1" 200 34
+INFO 2019-10-16 10:49:53,360 basehttp 124 "GET /mobiles/15591483859/count/ HTTP/1.1" 200 34
+INFO 2019-10-16 10:49:53,486 basehttp 124 "GET /mobiles/15591483859/count/ HTTP/1.1" 200 34
+INFO 2019-10-16 10:49:53,943 basehttp 124 "GET /sms_codes/15591483859/?text=lau9&image_code_id=e1c85fe2-8e42-4bf9-acc6-f92c833c0140 HTTP/1.1" 200 16
+INFO 2019-10-16 11:32:01,467 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-10-16 11:32:01,526 log 228 Not Found: /cart/
+WARNING 2019-10-16 11:32:01,526 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+WARNING 2019-10-16 11:32:02,047 log 228 Not Found: /cart/
+WARNING 2019-10-16 11:32:02,048 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+INFO 2019-10-16 11:32:09,037 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-10-16 11:32:09,132 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 204
+WARNING 2019-10-16 11:32:09,289 log 228 Not Found: /cart/
+WARNING 2019-10-16 11:32:09,290 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+WARNING 2019-10-16 11:32:09,660 log 228 Not Found: /cart/
+WARNING 2019-10-16 11:32:09,661 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+INFO 2019-10-16 11:32:11,724 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-10-16 11:32:11,743 basehttp 124 "GET /user/ HTTP/1.1" 200 82
+INFO 2019-10-16 11:32:11,754 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2019-10-16 11:32:11,762 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 11:32:11,762 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4176
+INFO 2019-10-16 11:32:59,492 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+ERROR 2019-10-16 11:32:59,768 log 228 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/users/serializers.py", line 201, in update
+    send_verify_email.delay(instance.email, verify_url)
+NameError: name 'send_verify_email' is not defined
+ERROR 2019-10-16 11:32:59,770 basehttp 124 "PUT /emails/ HTTP/1.1" 500 20116
+ERROR 2019-10-16 11:33:02,546 log 228 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/users/serializers.py", line 201, in update
+    send_verify_email.delay(instance.email, verify_url)
+NameError: name 'send_verify_email' is not defined
+ERROR 2019-10-16 11:33:02,547 basehttp 124 "PUT /emails/ HTTP/1.1" 500 20116
+INFO 2019-10-16 11:43:35,973 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2019-10-16 11:57:59,218 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+WARNING 2019-10-16 11:57:59,238 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 11:57:59,238 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4176
+INFO 2019-10-16 11:58:00,466 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2019-10-16 11:58:10,295 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+WARNING 2019-10-16 11:58:10,312 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 11:58:10,313 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4176
+WARNING 2019-10-16 11:58:58,226 log 228 Not Found: /cart/
+WARNING 2019-10-16 11:58:58,226 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+INFO 2019-10-16 11:59:00,159 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+WARNING 2019-10-16 11:59:00,167 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 11:59:00,168 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4176
+WARNING 2019-10-16 13:47:56,788 tasks 29 发送验证码短信[失败][ mobile: 15591483859 ]
+INFO 2019-10-16 13:48:34,646 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2019-10-16 13:48:34,807 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2019-10-16 13:55:16,200 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-10-16 13:55:16,238 log 228 Not Found: /cart/
+WARNING 2019-10-16 13:55:16,238 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+INFO 2019-10-16 13:55:18,333 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-10-16 13:55:18,349 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2019-10-16 13:55:18,361 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2019-10-16 13:55:18,367 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 13:55:18,368 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4176
+INFO 2019-10-16 13:55:19,568 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2019-10-16 13:56:05,491 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-10-16 13:56:05,586 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 226
+WARNING 2019-10-16 13:56:05,760 log 228 Not Found: /cart/
+WARNING 2019-10-16 13:56:05,760 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+WARNING 2019-10-16 13:56:06,242 log 228 Not Found: /cart/
+WARNING 2019-10-16 13:56:06,243 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+INFO 2019-10-16 13:56:07,122 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+WARNING 2019-10-16 13:56:07,137 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 13:56:07,137 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4176
+INFO 2019-10-16 13:56:13,390 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2019-10-16 13:56:52,903 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTU3MTIwNTM3MywiZXhwIjoxNTcxMjA1NjczfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6IjM3Njk3MTc4N0BxcS5jb20ifQ._Oycmp6BbObp9L4OHaTD7qHJSueL9YyBbGxocOjbr38 HTTP/1.1" 200 16
+INFO 2019-10-16 13:56:59,216 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-10-16 13:56:59,253 log 228 Not Found: /cart/
+WARNING 2019-10-16 13:56:59,254 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+WARNING 2019-10-16 13:57:00,250 log 228 Not Found: /cart/
+WARNING 2019-10-16 13:57:00,251 basehttp 124 "GET /cart/ HTTP/1.1" 404 4140
+INFO 2019-10-16 13:57:09,221 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+WARNING 2019-10-16 13:57:09,236 log 228 Not Found: /browse_histories/
+WARNING 2019-10-16 13:57:09,237 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4176

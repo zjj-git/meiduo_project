@@ -6,6 +6,7 @@ from rest_framework_jwt.settings import api_settings
 
 from users.models import User
 from users.utils import get_user_by_account
+from celery_tasks.email.tasks import send_verify_email
 
 
 class CreateUserSerializer(serializers.ModelSerializer):
@@ -165,4 +166,39 @@ class ResetPasswordSerializer(serializers.ModelSerializer):
         # 调用django 用户模型类的设置密码方法
         instance.set_password(validated_data['password'])
         instance.save()
+        return instance
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    """
+    用户详细信息序列化器
+    """
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'mobile', 'email', 'email_active')
+
+
+class EmailSerializer(serializers.ModelSerializer):
+    """
+    邮箱序列化器
+    """
+
+    class Meta:
+        model = User
+        fields = ('id', 'email')
+        extra_kwargs = {
+            'email': {
+                'required': True
+            }
+        }
+
+    def update(self, instance, validated_data):
+        instance.email = validated_data['email']
+        instance.save()
+
+        # 生成激活链接
+        verify_url = instance.generate_email_verify_url()
+        # 发送验证邮件
+        send_verify_email.delay(instance.email, verify_url)
+
         return instance

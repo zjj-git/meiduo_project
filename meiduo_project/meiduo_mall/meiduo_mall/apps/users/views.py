@@ -5,7 +5,8 @@ from django.shortcuts import render
 # Create your views here.
 # users/views.py
 from rest_framework import status, mixins
-from rest_framework.generics import CreateAPIView, GenericAPIView
+from rest_framework.generics import CreateAPIView, GenericAPIView, RetrieveAPIView, UpdateAPIView
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -110,3 +111,48 @@ class PasswordView(mixins.UpdateModelMixin, GenericAPIView):
 
     def post(self, request, pk):
         return self.update(request, pk)
+
+
+class UserDetailView(RetrieveAPIView):
+    """
+    用户详情
+    """
+    serializer_class = serializers.UserDetailSerializer
+    # 增加权限认证,只允许通过认证的用户
+    permission_classes = [IsAuthenticated]
+
+    def get_object(self):
+        # django jwt默认的认证,会在request里携带user用户信息
+        # 如果没有用户对象,则使用匿名用户
+        return self.request.user
+
+
+class EmailView(UpdateAPIView):
+    """
+    保存用户邮箱
+    """
+    serializer_class = serializers.EmailSerializer
+    # 用户权限认证
+    permission_classes = [IsAuthenticated]
+
+    def get_object(self):
+        return self.request.user
+
+
+class EmailVerifyView(APIView):
+    """邮箱验证"""
+
+    def get(self, request):
+        # 获取token
+        token = request.query_params.get('token')
+        if not token:
+            return Response({'缺少token'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # 校验保存
+        result = User.check_email_verify_token(token)
+
+        if result:
+            return Response({"message": "OK"})
+        else:
+            return Response({"非法的token"}, status=status.HTTP_400_BAD_REQUEST)
+
