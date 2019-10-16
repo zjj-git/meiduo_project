@@ -19,8 +19,7 @@ def send_sms_code(mobile, sms_code):
     try:
         ccp = CCP()
         result = ccp.send_template_sms(mobile, [sms_code, time], constants.SMS_CODE_TEMP_ID)
-        # print("短信验证码成功,验证码为{}".format(sms_code))
-        print(result)
+        print(sms_code)
     except Exception as e:
         logger.error("发送验证码短信[异常][ mobile: %s, message: %s ]" % (mobile, e))
     else:
