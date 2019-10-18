@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
+    'areas.apps.AreasConfig'
 ]
 
 MIDDLEWARE = [
@@ -214,3 +215,11 @@ EMAIL_HOST_USER = 'zjxhfc@163.com'
 EMAIL_HOST_PASSWORD = 'a1a1a1'
 # 发件人前缀
 EMAIL_FROM = '美多商城<zjxhfc@163.com>'
+
+# DRF扩展
+REST_FRAMEWORK_EXTENSIONS = {
+    # 缓存时间
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 60,
+    # 缓存存储
+    'DEFAULT_USE_CACHE': 'default',
+}
