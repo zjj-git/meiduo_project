@@ -24,7 +24,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
-    'areas.apps.AreasConfig'
+    'areas.apps.AreasConfig',
+    'contents.apps.ContentsConfig',
+    'goods.apps.GoodsConfig'
 ]
 
 MIDDLEWARE = [
