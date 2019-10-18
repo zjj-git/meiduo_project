@@ -22,5 +22,5 @@ urlpatterns = [
     path('', include('verifications.urls')),
     path('', include('users.urls')),
     path('', include('areas.urls')),
-    url(r'ckeditor/', include('ckeditor_uploader.urls')),
+    url('', include('ckeditor_uploader.urls')),
 ]
