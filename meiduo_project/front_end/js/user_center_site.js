@@ -36,6 +36,7 @@ var vm = new Vue({
         })
             .then(response => {
                 this.provinces = response.data;
+                // alert(response.data.results);
             })
             .catch(error => {
                 alert(error.response.data);

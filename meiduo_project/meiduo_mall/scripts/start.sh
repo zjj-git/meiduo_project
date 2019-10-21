@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# 启动tracker
-docker container start tracker
-
-# 启动storage
-docker container start storage
+## 启动tracker
+#docker container start tracker
+#
+## 启动storage
+#docker container start storage
 
 # 执行静态服务器
 cd /home/zjj/PycharmProjects/django_project/meiduo_project/front_end
