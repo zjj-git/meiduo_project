@@ -6,6 +6,7 @@ from django.template import loader
 from celery_tasks.main import celery_app
 from goods.models import SKU
 from goods.utils import get_categories
+from settings import dev
 
 
 @celery_app.task(name='generate_static_sku_detail_html')
@@ -116,6 +117,6 @@ def generate_static_list_search_html():
 
     template = loader.get_template('list.html')
     html_text = template.render(context)
-    file_path = os.path.join(settings.GENERATED_STATIC_HTML_FILES_DIR, 'list.html')
+    file_path = os.path.join(dev.GENERATED_STATIC_HTML_FILES_DIR, 'list.html')
     with open(file_path, 'w') as f:
         f.write(html_text)

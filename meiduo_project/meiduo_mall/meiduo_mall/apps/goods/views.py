@@ -3,8 +3,8 @@ from rest_framework.generics import ListAPIView
 from rest_framework_extensions.cache.mixins import ListCacheResponseMixin
 from goods import constants
 from goods.models import SKU
+from goods.pagenations import StandardPageNumPagination
 from goods.serializers import SKUSerializer
-from .pagenations import StandardPageNumPagination
 
 
 class HotSKUListView(ListCacheResponseMixin, ListAPIView):
@@ -12,7 +12,7 @@ class HotSKUListView(ListCacheResponseMixin, ListAPIView):
     热销商品, 使用缓存扩展
     """
     serializer_class = SKUSerializer
-    pagination_class = None
+    pagination_class = StandardPageNumPagination
 
     def get_queryset(self):
         category_id = self.kwargs.get('category_id')

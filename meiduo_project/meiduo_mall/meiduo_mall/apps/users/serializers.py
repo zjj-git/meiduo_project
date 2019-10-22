@@ -4,6 +4,8 @@ from django_redis import get_redis_connection
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 
+from goods.models import SKU
+from users import constants
 from users.models import User, Address
 from users.utils import get_user_by_account
 from celery_tasks.email.tasks import send_verify_email
