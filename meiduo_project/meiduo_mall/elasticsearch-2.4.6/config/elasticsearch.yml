@@ -1,0 +1,5 @@
+# 设置ip,设置为本机ip地址
+network.host: 127.0.0.1
+# 配置跨域
+http.cors.enabled: true
+http.cors.allow-origin: "*"

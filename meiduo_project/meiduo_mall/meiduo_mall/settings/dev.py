@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
     'django_crontab',  # 定时任务
+    'haystack',
 ]
 
 MIDDLEWARE = [
@@ -241,7 +242,7 @@ DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.storage.FastDFSStorage'
 
 # FastDFS
 # 访问图片的路径域名 ip地址修改为自己机器的ip地址
-FDFS_BASE_URL = '192.168.0.196:8888/'
+FDFS_BASE_URL = 'http://image.meiduo.com:8888/'
 FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
 
 # 富文本编辑器ckeditor配置
@@ -268,3 +269,17 @@ CRONJOBS = [
 
 # 解决crontab中文问题
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+# Haystack
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        # 此处为elasticsearch运行的服务器ip地址，端口号固定为9200
+        'URL': 'http://127.0.0.1:9200/',
+        # 指定elasticsearch建立的索引库的名称
+        'INDEX_NAME': 'meiduo',
+    },
+}
+
+# 当添加、修改、删除数据时，自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
