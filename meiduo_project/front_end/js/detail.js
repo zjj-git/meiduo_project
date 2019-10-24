@@ -132,7 +132,7 @@ var vm = new Vue({
                     responseType: 'json'
                 })
                 .then(response => {
-                    this.hots = response.data;
+                    this.hots = response.data.results;
                     for(var i=0; i<this.hots.length; i++){
                         this.hots[i].url = '/goods/' + this.hots[i].id + '.html';
                     }

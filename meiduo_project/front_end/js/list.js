@@ -19,6 +19,7 @@ var vm = new Vue({
         cart: [], // 购物车数据
         hots: [], // 热销商品
     },
+
     computed: {
         total_page: function () {  // 总页数
             return Math.ceil(this.count / this.page_size);
@@ -63,9 +64,9 @@ var vm = new Vue({
         }
     },
     mounted: function () {
+        this.get_cart();
         this.cat = this.get_query_string('cat');
         this.get_skus();
-
         this.get_hot_goods();
     },
     methods: {
@@ -138,6 +139,7 @@ var vm = new Vue({
                         this.cart_total_count += this.cart[i].count;
 
                     }
+
                 })
                 .catch(error => {
                     console.log(error.response);

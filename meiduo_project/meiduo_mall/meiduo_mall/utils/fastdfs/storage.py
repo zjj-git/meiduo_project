@@ -3,6 +3,8 @@ from django.core.files.storage import Storage
 from django.utils.deconstruct import deconstructible
 from fdfs_client.client import Fdfs_client
 
+from settings import dev
+
 
 @deconstructible
 class FastDFSStorage(Storage):
@@ -11,12 +13,12 @@ class FastDFSStorage(Storage):
     def __init__(self, client_conf=None, base_url=None):
         if client_conf is None:
             # 客户端配置文件
-            client_conf = settings.FDFS_CLIENT_CONF
+            client_conf = dev.FDFS_CLIENT_CONF
         self.client_conf = client_conf
 
         if base_url is None:
             # 构造图片完整路径，图片服务器的域名
-            base_url = settings.FDFS_BASE_URL
+            base_url = dev.FDFS_BASE_URL
         self.base_url = base_url
 
     def _open(self, name, mode='rb'):

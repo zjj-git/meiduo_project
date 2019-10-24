@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('areas.urls')),
     url('', include('ckeditor_uploader.urls')),
     path('', include('goods.urls')),
+    path('', include('carts.urls')),
 ]
