@@ -1,3 +1,3 @@
-[2019-10-24 09:00:28] ERROR - file: storage_func.c, line: 1194, conf file "/etc/fdfs/storage.conf", tracker: "127.0.0.1:22122" is invalid, tracker server ip can't be 127.0.0.1
-[2019-10-24 09:00:28] CRIT - exit abnormally!
+[2019-10-25 03:16:56] ERROR - file: storage_func.c, line: 1194, conf file "/etc/fdfs/storage.conf", tracker: "127.0.0.1:22122" is invalid, tracker server ip can't be 127.0.0.1
+[2019-10-25 03:16:56] CRIT - exit abnormally!
 
