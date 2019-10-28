@@ -6731,3 +6731,573 @@ INFO 2019-10-25 16:14:01,393 basehttp 124 "GET /addresses/ HTTP/1.1" 200 1077
 INFO 2019-10-25 16:14:02,963 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
 INFO 2019-10-25 16:14:03,514 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
 INFO 2019-10-25 16:14:06,015 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:23:31,458 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:23:31,596 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:23:34,392 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:23:35,519 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:23:37,055 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+WARNING 2019-10-28 09:23:37,078 log 228 Unauthorized: /orders/info/
+WARNING 2019-10-28 09:23:37,079 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 401 38
+INFO 2019-10-28 09:23:39,802 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:23:40,056 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 226
+INFO 2019-10-28 09:23:40,270 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:23:40,695 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:23:41,906 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:23:49,552 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:23:50,977 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:28:42,054 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:28:42,154 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:28:44,679 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:28:47,705 basehttp 124 "GET /image_codes/1b055601-4267-47ca-be73-3778e3b5bbb5/ HTTP/1.1" 200 3018
+INFO 2019-10-28 09:28:48,412 basehttp 124 "GET /usernames/15591483858/count/ HTTP/1.1" 200 36
+INFO 2019-10-28 09:28:50,466 basehttp 124 "GET /usernames/15591483858/count/ HTTP/1.1" 200 36
+INFO 2019-10-28 09:28:57,981 basehttp 124 "GET /usernames/nuanqifei/count/ HTTP/1.1" 200 34
+INFO 2019-10-28 09:29:14,814 basehttp 124 "GET /mobiles/13678594263/count/ HTTP/1.1" 200 34
+INFO 2019-10-28 09:29:17,907 basehttp 124 "GET /image_codes/06cb7a32-2cc2-4b0c-8906-f23a899c1380/ HTTP/1.1" 200 3351
+INFO 2019-10-28 09:29:23,279 basehttp 124 "GET /mobiles/13678594263/count/ HTTP/1.1" 200 34
+INFO 2019-10-28 09:29:23,329 basehttp 124 "GET /sms_codes/13678594263/?text=yhdn&image_code_id=06cb7a32-2cc2-4b0c-8906-f23a899c1380 HTTP/1.1" 200 16
+WARNING 2019-10-28 09:29:23,821 tasks 29 发送验证码短信[失败][ mobile: 13678594263 ]
+INFO 2019-10-28 09:29:40,031 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:29:40,033 basehttp 124 "GET /usernames/nuanqifei/count/ HTTP/1.1" 200 34
+INFO 2019-10-28 09:29:40,040 basehttp 124 "GET /mobiles/13678594263/count/ HTTP/1.1" 200 34
+INFO 2019-10-28 09:29:40,415 basehttp 124 "POST /users/ HTTP/1.1" 201 232
+INFO 2019-10-28 09:29:46,474 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:29:46,637 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 214
+INFO 2019-10-28 09:29:46,805 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:29:48,584 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:29:50,054 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:29:50,074 basehttp 124 "GET /user/ HTTP/1.1" 200 86
+INFO 2019-10-28 09:29:50,079 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:29:50,093 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:29:51,788 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:29:51,793 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-10-28 09:29:51,935 basehttp 124 "GET /addresses/ HTTP/1.1" 200 65
+INFO 2019-10-28 09:29:52,722 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 09:29:52,766 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:29:53,956 basehttp 124 "GET /user/ HTTP/1.1" 200 86
+INFO 2019-10-28 09:29:53,967 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:30:06,777 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:30:06,856 basehttp 124 "PUT /emails/ HTTP/1.1" 200 35
+INFO 2019-10-28 09:31:14,008 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTU3MjIyNjIwNiwiZXhwIjoxNTcyMjI2NTA2fQ.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6IjM3Njk3MTc4N0BxcS5jb20ifQ.3DHdFYFTeEc1ZeZDUVGTXDi3ZUzqxLW51UD8Vf_ICEY HTTP/1.1" 200 16
+INFO 2019-10-28 09:31:16,160 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:31:16,226 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:31:21,358 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-10-28 09:31:21,370 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:31:24,265 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:31:24,977 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-10-28 09:31:25,012 basehttp 124 "GET /addresses/ HTTP/1.1" 200 65
+INFO 2019-10-28 09:31:31,028 basehttp 124 "GET /areas/330000/ HTTP/1.1" 200 404
+INFO 2019-10-28 09:31:32,165 basehttp 124 "GET /areas/330700/ HTTP/1.1" 200 338
+INFO 2019-10-28 09:31:42,582 basehttp 124 "POST /addresses/ HTTP/1.1" 201 250
+INFO 2019-10-28 09:32:36,733 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:32:38,766 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:32:38,770 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 09:32:38,772 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1315
+INFO 2019-10-28 09:32:39,904 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 09:32:39,913 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2019-10-28 09:32:39,913 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:32:41,952 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 09:32:41,962 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 09:32:41,963 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2019-10-28 09:32:43,332 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2019-10-28 09:32:45,835 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 09:32:48,145 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 09:32:48,157 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1315
+INFO 2019-10-28 09:32:48,158 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 09:32:49,378 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 09:32:49,381 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 09:32:49,386 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2019-10-28 09:33:19,061 log 228 Bad Request: /cart/
+WARNING 2019-10-28 09:33:19,062 basehttp 124 "POST /cart/ HTTP/1.1" 400 43
+WARNING 2019-10-28 09:33:22,879 log 228 Bad Request: /cart/
+WARNING 2019-10-28 09:33:22,879 basehttp 124 "POST /cart/ HTTP/1.1" 400 43
+INFO 2019-10-28 09:33:25,582 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 09:33:25,603 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 09:33:25,603 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2019-10-28 09:33:26,791 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2019-10-28 09:33:29,365 basehttp 124 "GET /cart/ HTTP/1.1" 200 499
+INFO 2019-10-28 09:33:32,499 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:33:42,996 basehttp 124 "GET /cart/ HTTP/1.1" 200 499
+INFO 2019-10-28 09:33:45,330 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:33:47,508 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:34:02,914 basehttp 124 "GET /cart/ HTTP/1.1" 200 499
+INFO 2019-10-28 09:34:05,012 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-10-28 09:34:05,031 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 709
+INFO 2019-10-28 09:34:05,780 basehttp 124 "GET /cart/ HTTP/1.1" 200 499
+INFO 2019-10-28 09:34:06,456 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:34:12,644 basehttp 124 "GET /cart/ HTTP/1.1" 200 499
+INFO 2019-10-28 09:34:13,445 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:34:14,481 basehttp 124 "GET /cart/ HTTP/1.1" 200 499
+INFO 2019-10-28 09:34:22,424 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2019-10-28 09:34:22,441 basehttp 124 "GET /addresses/ HTTP/1.1" 200 315
+INFO 2019-10-28 09:34:22,447 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 525
+INFO 2019-10-28 09:34:24,131 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+WARNING 2019-10-28 09:34:24,143 log 228 Bad Request: /orders/
+WARNING 2019-10-28 09:34:24,144 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+WARNING 2019-10-28 09:34:28,224 log 228 Bad Request: /orders/
+WARNING 2019-10-28 09:34:28,225 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+INFO 2019-10-28 09:34:31,320 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2422
+INFO 2019-10-28 09:34:37,539 basehttp 124 "GET /cart/ HTTP/1.1" 200 499
+INFO 2019-10-28 09:34:38,566 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 525
+INFO 2019-10-28 09:34:38,566 basehttp 124 "GET /addresses/ HTTP/1.1" 200 315
+INFO 2019-10-28 09:34:46,564 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2019-10-28 09:34:48,738 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 09:34:48,779 log 228 Not Found: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 09:34:48,779 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 404 11292
+WARNING 2019-10-28 09:34:51,504 log 228 Not Found: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 09:34:51,505 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 404 11292
+WARNING 2019-10-28 09:34:51,847 log 228 Not Found: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 09:34:51,847 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 404 11292
+WARNING 2019-10-28 09:34:52,007 log 228 Not Found: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 09:34:52,007 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 404 11292
+INFO 2019-10-28 09:34:53,222 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2901
+WARNING 2019-10-28 09:34:58,135 log 228 Not Found: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 09:34:58,135 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 404 11292
+INFO 2019-10-28 15:14:17,396 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:14:17,445 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:14:34,137 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:14:34,294 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 235
+INFO 2019-10-28 15:14:34,459 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:14:35,249 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:14:37,696 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:14:37,705 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1315
+INFO 2019-10-28 15:14:37,709 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 15:14:38,915 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:14:38,923 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 15:14:38,929 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:14:38,947 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2019-10-28 15:14:43,434 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 15:14:43,436 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2019-10-28 15:14:43,440 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:14:44,014 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 15:14:44,026 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2019-10-28 15:14:44,028 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:14:48,610 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2019-10-28 15:14:50,450 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 15:14:54,498 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 15:14:54,584 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2901
+INFO 2019-10-28 15:15:01,003 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 15:15:02,268 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:15:02,269 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:15:02,300 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 276
+INFO 2019-10-28 15:15:02,302 basehttp 124 "GET /addresses/ HTTP/1.1" 200 315
+INFO 2019-10-28 15:15:05,555 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+WARNING 2019-10-28 15:15:05,627 log 228 Bad Request: /orders/
+WARNING 2019-10-28 15:15:05,628 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+WARNING 2019-10-28 15:15:08,440 log 228 Bad Request: /orders/
+WARNING 2019-10-28 15:15:08,441 basehttp 124 "POST /orders/ HTTP/1.1" 400 42
+WARNING 2019-10-28 15:16:12,301 log 228 Bad Request: /authorizations/
+WARNING 2019-10-28 15:16:12,301 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2019-10-28 15:16:17,446 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 226
+INFO 2019-10-28 15:16:17,628 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:16:18,178 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:16:19,378 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2901
+INFO 2019-10-28 15:16:22,018 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 15:16:22,033 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:16:22,034 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:16:23,600 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:16:23,600 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:16:23,808 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:16:23,808 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:16:24,001 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:16:24,002 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:16:24,158 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:16:24,158 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:16:24,335 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:16:24,335 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:16:24,516 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:16:24,517 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:16:24,696 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:16:24,696 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 15:29:36,460 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:29:36,547 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:29:37,568 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:29:38,620 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+WARNING 2019-10-28 15:29:38,624 log 228 Unauthorized: /orders/info/
+WARNING 2019-10-28 15:29:38,624 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 401 38
+INFO 2019-10-28 15:29:41,525 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:29:44,139 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:29:44,301 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 226
+INFO 2019-10-28 15:29:44,356 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:29:47,378 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2901
+INFO 2019-10-28 15:29:49,805 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 15:29:49,820 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:49,821 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:50,516 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:50,517 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:50,723 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:50,723 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:51,422 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:51,423 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:51,782 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:51,782 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:51,949 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:51,950 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:52,124 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:52,125 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:52,316 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:52,317 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:52,502 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:52,503 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:52,678 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:52,679 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:52,869 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:52,869 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:53,047 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:53,048 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:53,378 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:53,379 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:29:53,551 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:29:53,552 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 15:30:54,208 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 2901
+WARNING 2019-10-28 15:30:56,652 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:30:56,653 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 15:41:02,636 basehttp 124 "OPTIONS /payment/status/ HTTP/1.1" 200 0
+ERROR 2019-10-28 15:41:03,007 log 228 Internal Server Error: /payment/status/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/views.py", line 71, in put
+    sign = alipay_data_dict.pop('sign')
+KeyError: 'sign'
+ERROR 2019-10-28 15:41:03,009 basehttp 124 "PUT /payment/status/ HTTP/1.1" 500 21457
+WARNING 2019-10-28 15:41:07,266 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:41:07,267 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 15:41:17,516 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 15:41:17,539 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:41:17,539 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:41:31,211 log 228 Unauthorized: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:41:31,212 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 401 5398
+INFO 2019-10-28 15:41:31,322 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,339 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,355 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,369 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,373 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,374 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,381 basehttp 124 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,392 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,394 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,395 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2019-10-28 15:41:31,449 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2019-10-28 15:41:31,844 log 228 Not Found: /favicon.ico
+WARNING 2019-10-28 15:41:31,844 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 11558
+WARNING 2019-10-28 15:41:53,858 log 228 Unauthorized: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:41:53,858 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 401 5398
+INFO 2019-10-28 15:49:52,441 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:49:52,555 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:49:54,949 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:49:54,955 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 15:49:54,966 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1315
+INFO 2019-10-28 15:49:55,998 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:49:56,001 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 15:49:57,009 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2019-10-28 15:49:58,809 basehttp 124 "GET /cart/ HTTP/1.1" 200 249
+INFO 2019-10-28 15:49:59,302 basehttp 124 "GET /cart/ HTTP/1.1" 200 249
+INFO 2019-10-28 15:50:01,993 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:50:02,157 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 226
+INFO 2019-10-28 15:50:02,205 basehttp 124 "GET /cart/ HTTP/1.1" 200 249
+INFO 2019-10-28 15:50:04,534 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:50:04,534 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:50:04,564 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 275
+INFO 2019-10-28 15:50:04,574 basehttp 124 "GET /addresses/ HTTP/1.1" 200 1077
+INFO 2019-10-28 15:50:08,043 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:50:08,572 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2019-10-28 15:50:12,413 basehttp 124 "OPTIONS /orders/20191028075008000000001/payment/ HTTP/1.1" 200 0
+ERROR 2019-10-28 15:50:12,446 log 228 Internal Server Error: /orders/20191028075008000000001/payment/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/views.py", line 43, in get
+    debug=dev.ALIPAY_DEBUG
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/alipay/__init__.py", line 81, in __init__
+    self._load_key()
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/alipay/__init__.py", line 87, in _load_key
+    with open(self._app_private_key_path) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/payment/keys/app_private_key.pem'
+ERROR 2019-10-28 15:50:12,448 basehttp 124 "GET /orders/20191028075008000000001/payment/ HTTP/1.1" 500 22411
+ERROR 2019-10-28 15:50:14,281 log 228 Internal Server Error: /orders/20191028075008000000001/payment/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/views.py", line 43, in get
+    debug=dev.ALIPAY_DEBUG
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/alipay/__init__.py", line 81, in __init__
+    self._load_key()
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/alipay/__init__.py", line 87, in _load_key
+    with open(self._app_private_key_path) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/payment/keys/app_private_key.pem'
+ERROR 2019-10-28 15:50:14,282 basehttp 124 "GET /orders/20191028075008000000001/payment/ HTTP/1.1" 500 22411
+ERROR 2019-10-28 15:50:14,650 log 228 Internal Server Error: /orders/20191028075008000000001/payment/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/views.py", line 43, in get
+    debug=dev.ALIPAY_DEBUG
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/alipay/__init__.py", line 81, in __init__
+    self._load_key()
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/alipay/__init__.py", line 87, in _load_key
+    with open(self._app_private_key_path) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/payment/keys/app_private_key.pem'
+ERROR 2019-10-28 15:50:14,651 basehttp 124 "GET /orders/20191028075008000000001/payment/ HTTP/1.1" 500 22411
+ERROR 2019-10-28 15:50:14,826 log 228 Internal Server Error: /orders/20191028075008000000001/payment/
+Traceback (most recent call last):
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/views.py", line 43, in get
+    debug=dev.ALIPAY_DEBUG
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/alipay/__init__.py", line 81, in __init__
+    self._load_key()
+  File "/home/zjj/.virtualenvs/django_project/lib/python3.7/site-packages/alipay/__init__.py", line 87, in _load_key
+    with open(self._app_private_key_path) as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zjj/PycharmProjects/django_project/meiduo_project/meiduo_mall/meiduo_mall/apps/payment/payment/keys/app_private_key.pem'
+ERROR 2019-10-28 15:50:14,827 basehttp 124 "GET /orders/20191028075008000000001/payment/ HTTP/1.1" 500 22411
+INFO 2019-10-28 15:53:18,858 basehttp 124 "GET /orders/20191028075008000000001/payment/ HTTP/1.1" 200 868
+INFO 2019-10-28 15:54:13,804 basehttp 124 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=20191028075008000000001&method=alipay.trade.page.pay.return&total_amount=3388.00&sign=IAgEGCrfqRWwW9zMJ4iX%2FGVWwHG8C9Lvfbd%2F%2B7rXxnww60ElmVtCXizdLVvsuVgZm07MnebR6NldSmeclBr0qg%2BqjLkZ6Vx23XfD8wIl1seY3QFmlBAAw4EprHfaagZz%2BAeSvMMr8I7mdzfxRuUgcI0be20ikJMC7ZR7a904gLsU0g42iHVG3c7ubtuJ3zh5HNgehFSWSyhR%2FelOoGQHnpmj416WKBUQZuVFxDoVOrTv3tpgLeSyHUK4WEMURlbDXKKo3zhnKAF9KKRg6mIXUsCyEWVPvAaPHtj5ayao%2F4v0O0ceisGTF0ObcVRuh6YEnKAzOmlhdHhKM08y7bpplw%3D%3D&trade_no=2019102822001448461000008676&auth_app_id=2016101300673425&version=1.0&app_id=2016101300673425&sign_type=RSA2&seller_id=2088102179324391&timestamp=2019-10-28+15%3A54%3A10 HTTP/1.1" 200 0
+INFO 2019-10-28 15:54:14,031 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20191028075008000000001&method=alipay.trade.page.pay.return&total_amount=3388.00&sign=IAgEGCrfqRWwW9zMJ4iX%2FGVWwHG8C9Lvfbd%2F%2B7rXxnww60ElmVtCXizdLVvsuVgZm07MnebR6NldSmeclBr0qg%2BqjLkZ6Vx23XfD8wIl1seY3QFmlBAAw4EprHfaagZz%2BAeSvMMr8I7mdzfxRuUgcI0be20ikJMC7ZR7a904gLsU0g42iHVG3c7ubtuJ3zh5HNgehFSWSyhR%2FelOoGQHnpmj416WKBUQZuVFxDoVOrTv3tpgLeSyHUK4WEMURlbDXKKo3zhnKAF9KKRg6mIXUsCyEWVPvAaPHtj5ayao%2F4v0O0ceisGTF0ObcVRuh6YEnKAzOmlhdHhKM08y7bpplw%3D%3D&trade_no=2019102822001448461000008676&auth_app_id=2016101300673425&version=1.0&app_id=2016101300673425&sign_type=RSA2&seller_id=2088102179324391&timestamp=2019-10-28+15%3A54%3A10 HTTP/1.1" 200 43
+INFO 2019-10-28 15:54:20,938 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+WARNING 2019-10-28 15:54:20,947 log 228 Unauthorized: /orders/info/
+WARNING 2019-10-28 15:54:20,947 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 401 38
+INFO 2019-10-28 15:54:48,074 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:54:48,233 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 226
+INFO 2019-10-28 15:54:48,469 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 15:54:48,545 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 15:54:51,337 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3208
+INFO 2019-10-28 15:54:54,250 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 15:54:54,268 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:54:54,268 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 15:55:21,722 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 15:55:21,723 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 15:55:27,042 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3208
+INFO 2019-10-28 16:05:43,050 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 16:05:43,059 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:05:43,059 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 16:06:10,109 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 16:06:10,130 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:06:10,130 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 16:09:22,950 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:09:25,267 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:09:25,271 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:09:25,275 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1315
+INFO 2019-10-28 16:09:36,348 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:09:36,355 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:09:36,359 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:09:36,381 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2019-10-28 16:09:39,705 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:09:39,711 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2019-10-28 16:09:39,713 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:09:40,315 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:09:40,323 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:09:40,327 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2019-10-28 16:09:41,352 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2019-10-28 16:09:41,353 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:09:41,361 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:09:42,169 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2019-10-28 16:09:43,539 basehttp 124 "GET /cart/ HTTP/1.1" 200 234
+INFO 2019-10-28 16:09:44,042 basehttp 124 "GET /cart/ HTTP/1.1" 200 234
+INFO 2019-10-28 16:09:45,473 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:09:45,474 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:09:45,503 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 260
+INFO 2019-10-28 16:09:45,515 basehttp 124 "GET /addresses/ HTTP/1.1" 200 1077
+INFO 2019-10-28 16:09:48,015 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:09:48,346 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2019-10-28 16:09:49,956 basehttp 124 "OPTIONS /orders/20191028080948000000001/payment/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:09:50,035 basehttp 124 "GET /orders/20191028080948000000001/payment/ HTTP/1.1" 200 864
+INFO 2019-10-28 16:10:43,632 basehttp 124 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=20191028080948000000001&method=alipay.trade.page.pay.return&total_amount=7988.00&sign=nUoT4ODQAYXaGgoPMnH72WygfREJryo1mwRhfzVzO9EKLv5EexEUumkGyV4SfmY4WdowPSIi0YM0F%2FDZ4Kl%2BKscEs51%2BStBNoOMl9ZGpyZ0A9BCBAtYdfsPsOeddR9z%2FcjmFFRpSlvZpadRvB%2FBeQYtCX8zU9AAMpbn3w28Q42maIQdYNc%2BvGl0ytJXTkzmkiFz5QzRIQlhQ4MdXpw4ZgV6TM9if%2FmHgxC96xt4zKrzX55QO4k88B%2Bg3l4zvbCzPsnvdivKQZbOW7pQiD43Y8uEHfKckGONJ7rt7eOBv%2BMRwLe3yb1mzrlxzbpXB9VcCMc0Ku1iX5QWLRv6F6Di%2FAw%3D%3D&trade_no=2019102822001448461000008677&auth_app_id=2016101300673425&version=1.0&app_id=2016101300673425&sign_type=RSA2&seller_id=2088102179324391&timestamp=2019-10-28+16%3A10%3A40 HTTP/1.1" 200 0
+INFO 2019-10-28 16:10:43,924 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20191028080948000000001&method=alipay.trade.page.pay.return&total_amount=7988.00&sign=nUoT4ODQAYXaGgoPMnH72WygfREJryo1mwRhfzVzO9EKLv5EexEUumkGyV4SfmY4WdowPSIi0YM0F%2FDZ4Kl%2BKscEs51%2BStBNoOMl9ZGpyZ0A9BCBAtYdfsPsOeddR9z%2FcjmFFRpSlvZpadRvB%2FBeQYtCX8zU9AAMpbn3w28Q42maIQdYNc%2BvGl0ytJXTkzmkiFz5QzRIQlhQ4MdXpw4ZgV6TM9if%2FmHgxC96xt4zKrzX55QO4k88B%2Bg3l4zvbCzPsnvdivKQZbOW7pQiD43Y8uEHfKckGONJ7rt7eOBv%2BMRwLe3yb1mzrlxzbpXB9VcCMc0Ku1iX5QWLRv6F6Di%2FAw%3D%3D&trade_no=2019102822001448461000008677&auth_app_id=2016101300673425&version=1.0&app_id=2016101300673425&sign_type=RSA2&seller_id=2088102179324391&timestamp=2019-10-28+16%3A10%3A40 HTTP/1.1" 200 43
+INFO 2019-10-28 16:10:46,444 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 16:10:46,507 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3511
+INFO 2019-10-28 16:10:54,340 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:10:54,357 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:10:57,247 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3511
+INFO 2019-10-28 16:10:59,685 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 16:10:59,701 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:10:59,701 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 16:11:00,284 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:11:00,285 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 16:11:00,443 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:11:00,444 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 16:11:00,617 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:11:00,618 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 16:11:00,784 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:11:00,785 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 16:17:33,173 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3511
+INFO 2019-10-28 16:17:37,666 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3511
+WARNING 2019-10-28 16:17:40,665 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:17:40,666 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 16:17:54,490 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3511
+INFO 2019-10-28 16:19:15,580 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:19:17,772 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:19:17,790 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1315
+INFO 2019-10-28 16:19:17,791 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:19:19,226 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:19:19,234 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:19:19,242 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:19:19,264 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2019-10-28 16:19:20,698 log 228 Bad Request: /cart/
+WARNING 2019-10-28 16:19:20,699 basehttp 124 "POST /cart/ HTTP/1.1" 400 43
+INFO 2019-10-28 16:19:22,714 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:19:22,714 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:19:22,721 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2019-10-28 16:19:23,811 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2019-10-28 16:19:25,179 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 16:19:25,357 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 16:19:28,214 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2019-10-28 16:19:29,239 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:19:29,241 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:19:29,263 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 276
+INFO 2019-10-28 16:19:29,300 basehttp 124 "GET /addresses/ HTTP/1.1" 200 1077
+INFO 2019-10-28 16:19:31,636 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:19:32,478 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2019-10-28 16:19:34,113 basehttp 124 "OPTIONS /orders/20191028081931000000001/payment/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:19:34,185 basehttp 124 "GET /orders/20191028081931000000001/payment/ HTTP/1.1" 200 862
+INFO 2019-10-28 16:20:47,478 basehttp 124 "OPTIONS /payment/status/?charset=utf-8&out_trade_no=20191028081931000000001&method=alipay.trade.page.pay.return&total_amount=3788.00&sign=DuUUAgSjoTw9FGq7NrckL3sHyCkz3bcHndinJipplqcN%2FNft0Rb383aUF8MoeOhRc%2BmbG6cV0mEi25H7HPClUwzPRi3mSXwwvcoH4ZcH0emkH26gFWzFhZ6Io7PCKKntfCiPEVzbnIePe3fO4Z5aoPlJkhAo3augD5QQQJ9plW7vEHnjh8YLe1w3snZU%2B6wzx0Xm2CKlPWX%2Fmr6ccMup8tvSFCaTMZdiM1h9FXWrG43Tm7kvJXgqGzFJq33YbG8nlwLSPiR8AzDkPhz8jy8x5hfT4AXrUAFDaHxnbZ1hswv5RfTDNk0z5wACyDBf4jzPAYJGM0eO4nCOGWx0Ky%2BEOw%3D%3D&trade_no=2019102822001448461000008679&auth_app_id=2016101300673425&version=1.0&app_id=2016101300673425&sign_type=RSA2&seller_id=2088102179324391&timestamp=2019-10-28+16%3A20%3A44 HTTP/1.1" 200 0
+INFO 2019-10-28 16:20:47,718 basehttp 124 "PUT /payment/status/?charset=utf-8&out_trade_no=20191028081931000000001&method=alipay.trade.page.pay.return&total_amount=3788.00&sign=DuUUAgSjoTw9FGq7NrckL3sHyCkz3bcHndinJipplqcN%2FNft0Rb383aUF8MoeOhRc%2BmbG6cV0mEi25H7HPClUwzPRi3mSXwwvcoH4ZcH0emkH26gFWzFhZ6Io7PCKKntfCiPEVzbnIePe3fO4Z5aoPlJkhAo3augD5QQQJ9plW7vEHnjh8YLe1w3snZU%2B6wzx0Xm2CKlPWX%2Fmr6ccMup8tvSFCaTMZdiM1h9FXWrG43Tm7kvJXgqGzFJq33YbG8nlwLSPiR8AzDkPhz8jy8x5hfT4AXrUAFDaHxnbZ1hswv5RfTDNk0z5wACyDBf4jzPAYJGM0eO4nCOGWx0Ky%2BEOw%3D%3D&trade_no=2019102822001448461000008679&auth_app_id=2016101300673425&version=1.0&app_id=2016101300673425&sign_type=RSA2&seller_id=2088102179324391&timestamp=2019-10-28+16%3A20%3A44 HTTP/1.1" 200 43
+INFO 2019-10-28 16:21:15,463 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:21:15,495 basehttp 124 "GET /user/ HTTP/1.1" 200 97
+INFO 2019-10-28 16:21:15,515 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:21:15,545 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2273
+INFO 2019-10-28 16:21:17,909 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 16:21:17,974 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3818
+INFO 2019-10-28 16:21:20,253 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 16:21:20,271 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:21:20,271 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 16:22:02,965 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 16:22:02,978 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:22:02,978 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+WARNING 2019-10-28 16:22:12,146 log 228 Unauthorized: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:22:12,147 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 401 5398
+WARNING 2019-10-28 16:22:12,578 log 228 Not Found: /favicon.ico
+WARNING 2019-10-28 16:22:12,579 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 11558
+INFO 2019-10-28 16:23:01,759 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 16:23:01,838 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3818
+INFO 2019-10-28 16:23:06,329 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 16:23:06,421 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3818
+INFO 2019-10-28 16:23:13,572 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 16:23:13,600 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:23:13,600 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 16:23:43,577 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 16:23:43,670 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3818
+INFO 2019-10-28 16:23:46,681 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 16:23:46,790 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3818
+INFO 2019-10-28 16:23:54,042 basehttp 124 "OPTIONS /orders/20191028013445000000004/payment/ HTTP/1.1" 200 0
+WARNING 2019-10-28 16:23:54,065 log 228 Bad Request: /orders/20191028013445000000004/payment/
+WARNING 2019-10-28 16:23:54,066 basehttp 124 "GET /orders/20191028013445000000004/payment/ HTTP/1.1" 400 32
+INFO 2019-10-28 16:25:22,682 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:25:22,747 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:25:24,840 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:25:24,847 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1315
+INFO 2019-10-28 16:25:24,852 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:25:27,364 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:25:27,365 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2019-10-28 16:25:27,377 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:25:29,093 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2019-10-28 16:25:31,674 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 3818
+INFO 2019-10-28 16:25:36,145 basehttp 124 "GET /cart/ HTTP/1.1" 200 234
+INFO 2019-10-28 16:25:37,146 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:25:37,147 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:25:37,177 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 260
+INFO 2019-10-28 16:25:37,190 basehttp 124 "GET /addresses/ HTTP/1.1" 200 1077
+INFO 2019-10-28 16:25:40,040 basehttp 124 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:25:40,591 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2019-10-28 16:25:44,803 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 4121
+INFO 2019-10-28 16:25:56,903 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 4121
+INFO 2019-10-28 16:26:18,371 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:26:20,903 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:26:20,913 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:26:20,915 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1315
+INFO 2019-10-28 16:26:22,466 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 2356
+INFO 2019-10-28 16:26:22,471 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2019-10-28 16:26:22,471 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2019-10-28 16:26:24,491 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2019-10-28 16:26:25,872 basehttp 124 "GET /cart/ HTTP/1.1" 200 249
+INFO 2019-10-28 16:26:29,019 basehttp 124 "GET /cart/ HTTP/1.1" 200 249
+INFO 2019-10-28 16:26:29,560 basehttp 124 "GET /cart/ HTTP/1.1" 200 249
+INFO 2019-10-28 16:26:30,915 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 200 275
+INFO 2019-10-28 16:26:30,929 basehttp 124 "GET /addresses/ HTTP/1.1" 200 1077
+INFO 2019-10-28 16:26:35,299 basehttp 124 "POST /orders/ HTTP/1.1" 201 38
+INFO 2019-10-28 16:26:40,967 basehttp 124 "GET /orders/info/?page=1&page_size=5 HTTP/1.1" 200 4428
+INFO 2019-10-28 16:26:47,726 basehttp 124 "OPTIONS /orders/20191028082634000000001/payment/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:26:47,813 basehttp 124 "GET /orders/20191028082634000000001/payment/ HTTP/1.1" 200 862
+INFO 2019-10-28 16:27:32,853 basehttp 124 "OPTIONS /orders/info/?page=1&page_size=5 HTTP/1.1" 200 0
+INFO 2019-10-28 16:27:40,635 basehttp 124 "OPTIONS /orders/20191028082634000000001/payment/ HTTP/1.1" 200 0
+INFO 2019-10-28 16:27:40,722 basehttp 124 "GET /orders/20191028082634000000001/payment/ HTTP/1.1" 200 856

@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'goods.apps.GoodsConfig',
     'carts.apps.CartsConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
     'django_crontab',  # 定时任务
@@ -292,3 +293,8 @@ HAYSTACK_CONNECTIONS = {
 
 # 当添加、修改、删除数据时，自动生成索引
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+ALIPAY_APPID = 2016101300673425
+ALIPAY_DEBUG = True
+# 沙箱测试网关
+ALIPAY_GATEWAY_URL = 'https://openapi.alipaydev.com/gateway.do'

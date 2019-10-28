@@ -30,6 +30,7 @@ var vm = new Vue({
         oper_btn_click(order_id, status){
             if (status == '1') {
                 // 待支付
+                alert(this.token)
                 var url = this.host + '/orders/' + order_id + '/payment/';
                 axios.get(url, {
                     headers: {
